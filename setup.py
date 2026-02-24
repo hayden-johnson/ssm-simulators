@@ -14,6 +14,7 @@ CYTHON_MODULES = [
     "ddm_models",
     "race_models",
     "poisson_race_models",
+    "bayes_poisson_model",
     "lba_models",
     "sequential_models",
     "parallel_models",
