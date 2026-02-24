@@ -36,7 +36,9 @@ def get_bayes_poisson_config():
         "parameter_transforms": {
             "sampling": [],
             "simulation": [
-                ColumnStackParameters(["signal1", "signal2"], "signal", delete_sources=False),
+                ColumnStackParameters(
+                    ["signal1", "signal2"], "signal", delete_sources=False
+                ),
                 RenameParameter("entropy", "entropy_threshold"),
                 RenameParameter("step", "time_step"),
                 ExpandDimension(["noise", "t", "entropy_threshold", "time_step"]),
